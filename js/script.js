@@ -66,9 +66,9 @@ if (counters) {
 
                 if (value <= 0) {
                     value = '';
-                    target.closest('[data-counter]').querySelector('.counter_minus').classList.add('active');
+                    target.closest('[data-counter]').querySelector('.counter_minus').classList.add('disabled');
                 } else {
-                    target.closest('[data-counter]').querySelector('.counter_minus').classList.remove('active');
+                    target.closest('[data-counter]').querySelector('.counter_minus').classList.remove('disabled');
                 }
 
                 if (value != '') {
