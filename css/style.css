@@ -338,18 +338,8 @@ hr {
     padding-bottom: 3px;
 } 
 
-.wrap_minus {
-
-}
-
-/* .minus_box {
-    width: ;
-    height: ;
-} */
-
 .minus_color {
     fill: #3075c6;
-    /* cursor: pointer; */
 }
 
 .disabled {
