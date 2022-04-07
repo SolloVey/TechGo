@@ -1,12 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>TechGo</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;900&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"/>
+        <link rel="stylesheet" href="css/style.css" />
     </head>
-    <body>
-        asdasdasdas
+    <body onmousedown="return false" onselectstart="return false">
+        <header>
+            <div class="wrapper">
+                <div class="header">
+                    <a href="#">
+                        <div class="logo"></div>
+                    </a>
+                    <a href="#">
+                        <div class="user_logo"></div>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <a href="#">
+                    <div class="arrow-back"></div>
+                </a>
+                <div class="tour_preview">
+                    <div class="tour_photo">
+                        <div class="title_img preview_img">
+                            <img src="img/Russia/Camchatka/1_img.png" alt="Forest and mountains"/>
+                        </div>
+                        <div class="first_img preview_img preview_photo">
+                            <img src="img/Russia/Camchatka/2_img.png" alt="Lake and mountains"/>
+                        </div>
+                        <div class="second_img preview_img preview_photo">
+                            <img src="img/Russia/Camchatka/3_img.png" alt="Sunset in the mountains"/>
+                        </div>
+                        <div class="third_img preview_img preview_photo">
+                            <img src="img/Russia/Camchatka/4_img.png" alt="Northern Lights"/>
+                        </div>
+                    </div>
+                    <div class="tour_description">
+                        <div class="description">
+                            <h1>Snow Forest</h1>
+                            <p>
+                                Taste the cold and beauty of the Russian forest
+                                in winter.
+                            </p>
+                            <p>
+                                Taste the cold and beauty of the Russian forest
+                                in winter.
+                            </p>
+                            <div class="coordinates">
+                                <span class="location">Camchatka, Russia</span>
+                            </div>
+                        </div>
+                        <div class="tour_booking">
+                            <div class="date-amount">
+                                <div class="wrap">
+                                    <div class="calendar">
+                                        <div class="title_calendar">
+                                            <span class="booking_title">Date</span>
+                                        </div>
+                                        <div class="choose_date">
+                                            <span class="choose_date_btn">Choose date</span>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="counter">
+                                        <div class="title_counter">
+                                            <span class="number_of_persons">People</span>
+                                        </div>
+                                        <div class="counter_people" data-counter>
+                                            <button class="counter_btn counter_minus">
+                                                <div class="minus_box">
+                                                    <svg  class="wrapper_minus" width="11" height="1" viewBox="0 0 11 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect class="wrap_minus" width="11" height="1" fill="#AEAEAE"/>
+                                                    </svg>
+                                                </div>                                            
+                                            </button>
+                                            <input class="counter_input" type="text" placeholder="Add people" disabled></input>
+                                            <button class="counter_btn counter_plus"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn make-tour-btn">Make My Tour</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="recent_viewed">
+                <div class="container-recent-viewed">
+                    <div class="viewed">
+                        <h2>Recent Viewed</h2>
+                    </div>
+                    <div class="viewed_card dragscroll">
+                        <div class="card">
+                            <div class="card_cover">
+                                <img class="card_img" src="img/ukraine/carpati/cover_card_img.png" alt="Skier in the Carpathians">
+                            </div>
+                            <h3 class="card_title">Snow Hills</h3>
+                            <div class="place_price">
+                                <div class="place">
+                                    <span class="check_place">Carpati., Ukraine</span>
+                                </div>
+                                <div class="price">
+                                    <span class="numerator">75</span>  
+                                    <span class="price_person">&frasl; person</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_cover">
+                                <img class="card_img" src="img/russia/camchatka/card_cover_img.png" alt="Snow forest Camchatka">
+                            </div>
+                            <h3 class="card_title">Snow Forest</h3>
+                            <div class="place_price">
+                                <div class="place">
+                                    <span class="check_place">Camchat., Russia</span>
+                                </div>
+                                <div class="price">
+                                    <span class="numerator">75</span>  
+                                    <span class="price_person">&frasl; person</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_cover">
+                                <img class="card_img" src="img/usa/alaska/card_cover_img.png" alt="Alaska Trip">
+                            </div>
+                            <h3 class="card_title">Alaska Trip</h3>
+                            <div class="place_price">
+                                <div class="place">
+                                    <span class="check_place">Alaska, USA</span>
+                                </div>
+                                <div class="price">
+                                    <span class="numerator">75</span>  
+                                    <span class="price_person">&frasl; person</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_cover">
+                                <img class="card_img" src="img/indonesia/bali/card_cover_img.png" alt="Sea Horizon">
+                            </div>
+                            <h3 class="card_title">Sea Horizon</h3>
+                            <div class="place_price">
+                                <div class="place">
+                                    <span class="check_place">Bali, Indonesia</span>
+                                </div>
+                                <div class="price">
+                                    <span class="numerator">75</span>  
+                                    <span class="price_person">&frasl; person</span>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="card">
+                            <div class="card_cover">
+                                <img class="card_img" src="img/japan/tokyo/card_cover_img.png" alt="Tokyo Temples">
+                            </div>
+                            <h3 class="card_title">Tokyo Temples</h3>
+                            <div class="place_price">
+                                <div class="place">
+                                    <span class="check_place">Tokyo, Japan</span>
+                                </div>
+                                <div class="price">
+                                    <span class="numerator">120</span>  
+                                    <span class="price_person">&frasl; person</span>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card">
+                            <div class="card_cover">
+                                <img class="card_img" src="img/usa/arizona/card_cover_img.png" alt="The Grand Canyon">
+                            </div>
+                            <h3 class="card_title">The Grand Canyon</h3>
+                            <div class="place_price">
+                                <div class="place">
+                                    <span class="check_place">Arizona, USA</span>
+                                </div>
+                                <div class="price">
+                                    <span class="numerator">150</span>  
+                                    <span class="price_person">&frasl; person</span>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container-main">
+                    <div class="recommendation">
+                        <h2>Recommendation</h2>
+                    </div>
+                    <div class="recommendation-menu">
+                        <div class="card_recommendation">
+                            <div class="card_cover">
+                                <img class="card_img" src="img/usa/arizona/card_cover_img.png" alt="The Grand Canyon">
+                            </div>
+                            <h3 class="card_title_recommendation">The Grand Canyon</h3>
+                            <p class="card_description">
+                                The biggest and the most beautiful canyon in the world
+                            </p>
+                            <div class="place_price">
+                                <div class="place">
+                                    <span class="check_place_recommendation">Arizona, USA</span>
+                                </div>
+                                <div class="price">
+                                    <span class="numerator">150</span>  
+                                    <span class="price_person">&frasl; person</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_recommendation">
+                            <div class="card_cover">
+                                <img class="card_img" src="img/usa/nyc/cover_card_img.png" alt="New York, WTC">
+                            </div>
+                            <h3 class="card_title_recommendation">New York, WTC</h3>
+                            <p class="card_description">
+                                The highest point of the New York. One of the centers of world trade
+                            </p>
+                            <div class="place_price">
+                                <div class="place">
+                                    <span class="check_place_recommendation">NYC, USA</span>
+                                </div>
+                                <div class="price">
+                                    <span class="numerator">180</span>  
+                                    <span class="price_person">&frasl; person</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_recommendation">
+                            <div class="card_cover">
+                                <img class="card_img" src="img/indonesia/bali/card_cover_img.png" alt="Bali Beaches">
+                            </div>
+                            <h3 class="card_title_recommendation">Bali Beaches</h3>
+                            <p class="card_description">
+                                Great skiing opportunity with a beautiful view
+                            </p>
+                            <div class="place_price">
+                                <div class="place">
+                                    <span class="check_place_recommendation">Bali, Indonesia</span>
+                                </div>
+                                <div class="price">
+                                    <span class="numerator">90</span>  
+                                    <span class="price_person">&frasl; person</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_recommendation">
+                            <div class="card_cover">
+                                <img class="card_img" src="img/ukraine/carpati/cover_card_img.png" alt="Snow Hills">
+                            </div>
+                            <h3 class="card_title_recommendation">Snow Hills</h3>
+                            <p class="card_description">
+                                Amazing views from the cleanest beaches in the world
+                            </p>
+                            <div class="place_price">
+                                <div class="place">
+                                    <span class="check_place_recommendation">Carpati., Ukraine</span>
+                                </div>
+                                <div class="price">
+                                    <span class="numerator">75</span>  
+                                    <span class="price_person">&frasl; person</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_recommendation">
+                            <div class="card_cover">
+                                <img class="card_img" src="img/japan/tokyo/card_cover_img.png" alt="Tokyo Temples">
+                            </div>
+                            <h3 class="card_title_recommendation">Tokyo Temples</h3>
+                            <p class="card_description">
+                                Great opportunity to explore traditional Japanese culture
+                            </p>
+                            <div class="place_price">
+                                <div class="place">
+                                    <span class="check_place_recommendation">Tokyo, Japan</span>
+                                </div>
+                                <div class="price">
+                                    <span class="numerator">120</span>  
+                                    <span class="price_person">&frasl; person</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_recommendation">
+                            <div class="card_cover">
+                                <img class="card_img" src="img/turkey/cappad/cover_card_img.png" alt="Cappadocia">
+                            </div>
+                            <h3 class="card_title_recommendation">Cappadocia</h3>
+                            <p class="card_description">
+                                The biggest balloon show in the world
+                            </p>
+                            <div class="place_price">
+                                <div class="place">
+                                    <span class="check_place_recommendation">Cappad.,Turkey</span>
+                                </div>
+                                <div class="price">
+                                    <span class="numerator">70</span>  
+                                    <span class="price_person">&frasl; person</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_recommendation">
+                            <div class="card_cover">
+                                <img class="card_img" src="img/ukraine/carpati/cover_card_img.png" alt="Snow Hills">
+                            </div>
+                            <h3 class="card_title_recommendation">Snow Hills</h3>
+                            <p class="card_description">
+                                Amazing views from the cleanest beaches in the world
+                            </p>
+                            <div class="place_price">
+                                <div class="place">
+                                    <span class="check_place_recommendation">Carpati., Ukraine</span>
+                                </div>
+                                <div class="price">
+                                    <span class="numerator">75</span>  
+                                    <span class="price_person">&frasl; person</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_recommendation">
+                            <div class="card_cover">
+                                <img class="card_img" src="img/ukraine/odesa/cover_card_img.png" alt="Aсkerman Fortress">
+                            </div>
+                            <h3 class="card_title_recommendation">Aсkerman Fortress</h3>
+                            <p class="card_description">
+                                The oldest Black Sea fortress with a rich history
+                            </p>
+                            <div class="place_price">
+                                <div class="place">
+                                    <span class="check_place_recommendation">Odesa, Ukraine</span>
+                                </div>
+                                <div class="price">
+                                    <span class="numerator">40</span>  
+                                    <span class="price_person">&frasl; person</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="view">
+                    <button class="btn btn_view">View More</button>
+                </div>
+            </section>           
+        </main>
+        <footer>
+            <div class="container-main">
+                <div class="wrap_footer">
+                    <div class="footer_head">
+                        <a class="logo_link" href="#">
+                            <div class="logo"></div>
+                        </a>
+                        <div class="tagline">
+                            <span class="tagline_text">Enjoy by triping with Techgo.</span>
+                        </div>
+                        <div class="social">
+                            <a href="#"><div class="network_fb"></div></a>
+                            <a href="#"><div class="network_tlg"></div></a>
+                            <a href="#"><div class="network_inst"></div></a>
+                        </div>
+                    </div>
+                    <nav class="nav_sections">
+                        <ul class="menu">
+                            <li>Menu</li>
+                            <li><a href="#" class="nav_text">Home</a></li>
+                            <li><a href="#" class="nav_text">Tours</a></li>
+                            <li><a href="#" class="nav_text">Category</a></li>
+                            <li><a href="#" class="nav_text">About us</a></li>
+                        </ul>
+                        <ul class="menu">
+                            <li>Booking Plan</li>
+                            <li><a href="#" class="nav_text">Personal Trip</a></li>
+                            <li><a href="#" class="nav_text">Group Trip</a></li>
+                        </ul>
+                        <ul class="menu">
+                            <li>Support</li>
+                            <li><a href="#" class="nav_text">FAQ</a></li>
+                            <li><a href="#" class="nav_text">Terms &amp; Conditions</a></li>
+                            <li><a href="#" class="nav_text">Privacy Policy</a></li>
+                        </ul>
+                        <ul class="menu">
+                            <li>Get App</li>
+                            <li><a href="#" class="nav_text">Google Play Store</a></li>
+                            <li><a href="#" class="nav_text">App Store</a></li>
+                            <li><a href="#" class="nav_text">Other Stores</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="breadcrumbs">2022 &copy; &mdash; Techgo. All Rights Reserved</div>
+        </footer>
+        <script src="js/script.js"></script>
     </body>
 </html>
