@@ -1,4 +1,49 @@
 // COUNTER
+// const counters = document.querySelectorAll('[data-counter]');
+
+// if (counters) {
+//     counters.forEach(counter_people => {
+//         counter_people.addEventListener('click', e => {
+//             const target = e.target;
+
+//             if (target.closest('.counter_btn')) {
+//                 if (target.closest('.counter_people').querySelector('input').value == '' && (target.classList.contains('counter_minus') || target.classList.contains('counter_plus'))
+//                 ) {
+//                     target.closest('.counter_people').querySelector('input').value = 0;
+//                 }
+
+//                 let value = parseInt(
+//                     target.closest('.counter_people').querySelector('input')
+//                         .value
+//                 );
+
+//                 if (target.classList.contains('counter_plus')) {
+//                     value++;
+//                 } else {
+//                     --value;
+//                 }
+
+//                 if (value <= 0) {
+//                     value = '';
+//                     target.closest('.counter_people').querySelector('.counter_minus').classList.add('active');
+//                 } else {
+//                     target.closest('.counter_people').querySelector('.counter_minus').classList.remove('active');
+//                 }
+
+//                 if (value != '') {
+//                     target.closest('.counter_people').querySelector('.wrap_minus').classList.add('minus_color');
+//                 } else {
+//                     target.closest('.counter_people').querySelector('.wrap_minus').classList.remove('minus_color');
+//                 }
+
+//                 target.closest('.counter_people').querySelector('input').value = value;
+//             }
+//         });
+//     });
+// }
+
+
+
 const counters = document.querySelectorAll('[data-counter]');
 
 if (counters) {
@@ -7,16 +52,11 @@ if (counters) {
             const target = e.target;
 
             if (target.closest('.counter_btn')) {
-                if (
-                    target.closest('.counter').querySelector('input').value == '' && (target.classList.contains('counter_minus') ||
-                        target.classList.contains('counter_plus'))
-                ) {
-                    target
-                        .closest('.counter')
-                        .querySelector('input').value = 0;
+                if (target.closest('[data-counter]').querySelector('input').value == '' && (target.classList.contains('counter_minus') || target.classList.contains('counter_plus'))) {
+                    target.closest('[data-counter]').querySelector('input').value = 0;
                 }
 
-                let value = parseInt(target.closest('.counter').querySelector('input').value);
+                let value = parseInt(target.closest('[data-counter]').querySelector('input').value);
 
                 if (target.classList.contains('counter_plus')) {
                     value++;
@@ -26,64 +66,22 @@ if (counters) {
 
                 if (value <= 0) {
                     value = '';
-                    target.closest('.counter').querySelector('.counter_minus').classList.add('active');
+                    target.closest('[data-counter]').querySelector('.counter_minus').classList.add('active');
                 } else {
-                    target.closest('.counter').querySelector('.counter_minus').classList.remove('active');
+                    target.closest('[data-counter]').querySelector('.counter_minus').classList.remove('active');
                 }
 
-                if (value != '') {;
-                    target.closest('.counter').querySelector('.wrap_minus').classList.add('minus_color');
-                } else {
-                    target.closest('.counter').querySelector('.wrap_minus').classList.remove('minus_color');
-                }
-                         
-                target.closest('.counter').querySelector('input').value = value;
-            } 
+                if (value != '') {
+                    target.closest('[data-counter]').querySelector('.wrap_minus').classList.add('minus_color');
+                 } else {
+                     target.closest('[data-counter]').querySelector('.wrap_minus').classList.remove('minus_color');
+                 }
+
+                target.closest('[data-counter]').querySelector('input').value = value;
+            }
         });
     });
 }
-
-
-
-// const counters = document.querySelectorAll('[data-counter]');
-
-// if (counters) {
-//     counters.forEach(counter => {
-//         counter.addEventListener('click', e => {
-//             const target = e.target;
-
-//             if (target.closest('.counter__button')) {
-//                 if (
-//                     target.closest('.counter').querySelector('input').value ==
-//                         '' &&
-//                     (target.classList.contains('counter__button_minus') ||
-//                         target.classList.contains('counter__button_plus'))
-//                 ) {
-//                     target.closest('.counter').querySelector('input').value = 0;
-//                 }
-
-//                 let value = parseInt(
-//                     target.closest('.counter').querySelector('input').value
-//                 );
-
-//                 if (target.classList.contains('counter__button_plus')) {
-//                     value++;
-//                 } else {
-//                     --value;
-//                 }
-
-//                 if (value <= 0) {
-//                     value = '';
-//                     target.closest('.counter').querySelector('.counter__button_minus').classList.add('disabled');
-//                 } else {
-//                     target.closest('.counter').querySelector('.counter__button_minus').classList.remove('disabled');
-//                 }
-
-//                 target.closest('.counter').querySelector('input').value = value;
-//             }
-//         });
-//     });
-// }
 
 
 
