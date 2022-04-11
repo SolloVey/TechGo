@@ -578,18 +578,19 @@ h2 {
     display: flex;
     flex-direction: column;
     width: 261px;
-    height: 391px;
+    height: 343px;
     box-sizing: border-box;
     margin-right: 40px;
     padding: 0px;
     background-color: transparent;
     box-shadow: 0px 4px 45px -15px rgb(0 0 0 / 15%);
     border-radius: 25px;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .card_wrapp:hover {
-    /* transform: scale(1.1); */
+    transform: scale(1.1);
+    border-radius: 25px 25px 0px 0px;
 }
 
 .card_recommendation {
@@ -605,9 +606,11 @@ h2 {
     background-color: #ffffff;
     box-shadow: 0px 4px 45px -15px rgba(0, 0, 0, 0.15);
     border-radius: 25px;
+    transition: 0.2s linear;
 }
 
 .card_recommendation:hover {
+    border-radius: 25px 25px 0px 0px;
 }
 
 .book_trip {
@@ -617,15 +620,42 @@ h2 {
     font-size: 1.6rem;
     line-height: 1.375;
     color: #ffffff;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    border-radius: 0px 0px 25px 25px;
+    border-radius: 25px;
     background-color: #3075C6;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.05);
+    /* box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.05);     */
+    max-height: 0;
+    transition: 0.2s linear;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.book_trip::after {
+    content: '';
+    display: inline-flex;
+    width: 2.9rem;
+    height: 1.1rem;
+    background-color: transparent;
+    background-image: url(../img/arrow.svg);
+    background-size: 2.9rem 1.1rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-left: 1rem;
+    
 }
 
 .book_trip:hover {
     background-color: #5d5fef;
+}
+
+.card_wrapp:hover .book_trip {
+    max-height: 50px;
+    padding-top: 1.5rem;
+    padding-bottom: 3.5rem;
+    margin-top: -15px;
+    border-radius: 0px 0px 25px 25px;
+    /* box-shadow: 0px 4px 45px -15px rgba(0, 0, 0, 0.15); */
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .trip {
@@ -646,7 +676,7 @@ h2 {
     width: 100%;
     height: 22px;
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     line-height: 1.375;
     color: #aeaeae;
 }
