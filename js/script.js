@@ -59,7 +59,7 @@ if (counters) {
             }
         });
     });
-}
+};
 
 // DRAGSCROLL - scroll area by dragging
 (function (root, factory) {
@@ -147,8 +147,3 @@ if (counters) {
     }
     exports.reset = reset;
 });
-
-
-// new AirDatepicker('#airdatepicker', {
-//     inline: true
-// });
